@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수강 추천</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/keimyung-logo.png" alt="Keimyung University Logo" class="logo">
+      <h1>수강 추천</h1>
+    </header>
+    <main>
+      <h2>원하는 항목 키워드를 선택해주세요!</h2>
+      <div class="keyword-container">
+        <button class="keyword-button">공과대학</button>
+        <button class="keyword-button">의과대학</button>
+        <button class="keyword-button">음악공연예술대학</button>
+        <button class="keyword-button">글로벌비즈니스</button>
+        <button class="keyword-button">문화예술대학</button>
+        <button class="keyword-button">인문국제학</button>
+        <button class="keyword-button">간호대학</button>
+        <button class="keyword-button">Adams College</button>
+        <button class="keyword-button">철학대학</button>
+        <button class="keyword-button">과학기술</button>
+      </div>
+      <div class="time-options">
+        <button class="time-button">주간</button>
+        <button class="time-button">야간</button>
+        <button class="time-button">1교시</button>
+      </div>
+      <!-- 로딩 페이지로 이동하는 버튼 추가 -->
+      <button onclick="goToLoadingPage()" class="select-button">키워드 선택</button>
+    </main>
+  </div>
+  <script>
+    function goToLoadingPage() {
+      window.location.href = "loading.html";
+    }
+  </script>
+</body>
+</html>
